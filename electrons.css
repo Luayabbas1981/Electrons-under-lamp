@@ -13,6 +13,17 @@ body{
     transform: translate(-50%, -50%);
     transition: 2s;
 }
+@media(max-width:767px){
+    body{
+        background-color: #383837;
+    }
+    .frame{
+        left: 12%;
+        top: 25%;
+     scale:0.6 0.7;
+     box-shadow: none;
+    }
+}
 
 [class^="black"] {
     position: relative;
