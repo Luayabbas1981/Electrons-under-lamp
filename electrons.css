@@ -357,7 +357,7 @@ label {
     border-radius: 50%;
     top: 150px;
     left: 480px;
-    box-shadow: inset 0px 0px 7px 1px #747371;
+    box-shadow: inset 0px 0px 5px 3px #839101;
 }
 
 i {
@@ -365,7 +365,8 @@ i {
     font-size: 20px;
     left: 3.5px;
     top: 3.5px;
-    color: red;
+    color: tomato;
+   
 }
 
 
@@ -378,6 +379,7 @@ i {
     z-index: 3;
     opacity: 0;
     cursor: pointer;
+   
 }
 
 input:checked+.lamp3 {
