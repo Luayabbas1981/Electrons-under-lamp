@@ -77,6 +77,7 @@
             </footer>
     </form>
     <script>
+        console.log(window.innerWidth)
         const checkboxes = document.querySelectorAll('input[type="checkbox"]');
          function toggle(source) {
             for (var i = 0; i < checkboxes.length; i++) {
@@ -86,8 +87,18 @@
             
             const audio = new Audio();
             audio.src = "/Audio/mixkit-birthday-crowd-party-cheer-531.wav";
+            document.body.style.transition="2s"
+            if(checkboxes[0].checked == true && window.innerWidth < 767){
+                console.log("hi")
+                document.body.style.backgroundColor="#c7c2c2"
+                
+            }else if (checkboxes[0].checked == false && window.innerWidth < 767){
+                console.log("why")
+                document.body.style.backgroundColor="#383837"
+              
         }
-        
+        }
+       
     </script>
 </body>
 
