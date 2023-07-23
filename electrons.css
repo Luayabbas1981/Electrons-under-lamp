@@ -18,7 +18,7 @@ body {
         background-color: #383837;
     }
     .frame {
-        left: 10%;
+        left: 15%;
         top: 35%;
         scale: 0.6 0.7;
         box-shadow: none;
@@ -468,13 +468,5 @@ input {
     left: 44px;
     width: 30px;
 }
-footer div:first-child {
-    position: absolute;
-    font-family: "Dancing Script", cursive;
-    color: #c8c2c2;
-    top: 150px;
-    right: 60px;
-    font-size: 33px;
-    font-style: italic;
-}
+
 
