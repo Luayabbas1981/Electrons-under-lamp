@@ -72,19 +72,24 @@
                 <div >Electrons under lamp
                     
                 </div>
-                <div>Luay  Abbas</div>
                
             </footer>
     </form>
+    <audio class="happy" src="./sounds/happy.wav"></audio>
+    <audio class="sad" src="./sounds/sad.mp4"></audio>
     <script>
         console.log(window.innerWidth)
         const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const happy = document.querySelector(".happy")
+        const sad = document.querySelector(".sad")
+        happy.volume = 0.1;
+        sad.volume = 0.1;
          function toggle(source) {
             for (var i = 0; i < checkboxes.length; i++) {
                 if (checkboxes[i] != source)
                     checkboxes[i].checked = source.checked;
             }
-            
+           
             const audio = new Audio();
             audio.src = "/Audio/mixkit-birthday-crowd-party-cheer-531.wav";
             document.body.style.transition="2s"
@@ -94,8 +99,17 @@
                 
             }else if (checkboxes[0].checked == false && window.innerWidth < 767){
                 console.log("why")
-                document.body.style.backgroundColor="#383837"
-              
+                document.body.style.backgroundColor="#383837"  
+        }
+
+        if(checkboxes[0].checked == true){
+            sad.muted = true
+            happy.muted=false
+            happy.play()
+        }else{
+            happy.muted=true
+            sad.muted = false
+            sad.play()
         }
         }
        

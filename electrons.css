@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #eee;
 }
 .frame {
@@ -13,15 +13,15 @@ body{
     transform: translate(-50%, -50%);
     transition: 2s;
 }
-@media(max-width:767px){
-    body{
+@media (max-width: 767px) {
+    body {
         background-color: #383837;
     }
-    .frame{
+    .frame {
         left: 10%;
         top: 35%;
-     scale:0.6 0.7;
-     box-shadow: none;
+        scale: 0.6 0.7;
+        box-shadow: none;
     }
 }
 
@@ -36,7 +36,6 @@ body{
     background-color: black;
     top: 23px;
     left: 295px;
-
 }
 
 .lamp2 {
@@ -71,7 +70,6 @@ body{
     border: 1px solid rgb(107, 106, 106);
 
     transition: 2s;
-
 }
 
 .body1::after {
@@ -131,7 +129,6 @@ body{
     top: 294px;
     left: 321px;
     transform: rotate(101deg);
-
 }
 
 .hand1_1 {
@@ -158,7 +155,6 @@ body{
     transform: rotate(50deg);
     background-color: black;
     transition: 1s;
-
 }
 
 .leg1_1 {
@@ -244,7 +240,6 @@ body{
     left: 435px;
     transform: rotate(355deg);
     background-color: black;
-
 }
 
 .leg2_2 {
@@ -283,7 +278,6 @@ body{
     top: 79px;
     transform: rotate(347deg);
     transition: 1.5s;
-
 }
 
 .eye3_1 {
@@ -307,7 +301,6 @@ body{
     top: 346px;
     left: 223px;
     transform: rotate(244deg);
-
 }
 
 .hand3_1 {
@@ -340,14 +333,10 @@ label {
     left: 406px;
     font-size: x-large;
     font-style: italic;
-    font-family: 'Lobster', cursive;
+    font-family: "Lobster", cursive;
     color: red;
     transition: 2s;
 }
-
-
-
-
 
 .click {
     position: relative;
@@ -366,10 +355,7 @@ i {
     left: 3.5px;
     top: 3.5px;
     color: tomato;
-   
 }
-
-
 
 #C {
     position: absolute;
@@ -379,91 +365,82 @@ i {
     z-index: 3;
     opacity: 0;
     cursor: pointer;
-   
 }
 
-input:checked+.lamp3 {
+input:checked + .lamp3 {
     background-color: yellow;
     box-shadow: 0px 0px 10px 15px #ecec98;
 }
 
-#b1:checked+.body1 {
+#b1:checked + .body1 {
     box-shadow: 0px 0px 3px 3px #f0f0ab;
 }
 
-#b1:checked+.body1::after {
-
+#b1:checked + .body1::after {
     width: 73px;
-
 }
 
-#b2:checked+.body2::after {
+#b2:checked + .body2::after {
     width: 72px;
     height: 26px;
     left: 19px;
 }
 
-#b3:checked+.body3::after {
+#b3:checked + .body3::after {
     width: 73px;
     height: 31px;
     left: -10px;
 }
 
-#b2:checked+.body2 {
+#b2:checked + .body2 {
     box-shadow: -3px 0px 6px 1px #f1f179;
 }
 
-#b3:checked+.body3 {
+#b3:checked + .body3 {
     box-shadow: 2px -3px 6px 1px #f1f179;
 }
 
-#frame1:checked+.frame {
+#frame1:checked + .frame {
     background-color: #c7c2c2;
 }
 
-#e1:checked+.eye1 {
+#e1:checked + .eye1 {
     background-color: yellow;
     box-shadow: inset 0px 0px 1px 1px orange;
 }
 
-#e2:checked+.eye2 {
-
+#e2:checked + .eye2 {
     background-color: yellow;
     box-shadow: inset 0px 0px 1px 1px orange;
 }
 
-#e3:checked+.eye3_1 {
+#e3:checked + .eye3_1 {
     background-color: yellow;
     box-shadow: inset 0px 0px 1px 1px orange;
-
 }
 
-#l1:checked+label {
+#l1:checked + label {
     color: transparent;
-
-
 }
-
 
 input {
     opacity: 0;
 }
 
-#h1:checked+.hand1_1 {
+#h1:checked + .hand1_1 {
     top: 325px;
     left: 353px;
     transform: rotate(222deg);
 }
 
-#h2:checked+.hand1_2 {
+#h2:checked + .hand1_2 {
     top: 326px;
     left: 289px;
     transform: rotate(140deg);
     background-color: black;
 }
 
-#m:checked+.mouth1 {
-
+#m:checked + .mouth1 {
     width: 17px;
     height: 10px;
     top: 324px;
@@ -471,24 +448,18 @@ input {
     background-color: black;
     border-bottom: 7px solid #ef0f0f;
     box-shadow: none;
-
-
 }
 
-#h2_1:checked+.hand2_1 {
-
+#h2_1:checked + .hand2_1 {
     transform: rotate(156deg);
 }
 
-#h3_1:checked+.hand3_1 {
-
+#h3_1:checked + .hand3_1 {
     transform: rotate(140deg);
 }
 
-#red:checked+.click i {
-
+#red:checked + .click i {
     color: transparent;
-
 }
 
 #audio {
@@ -496,23 +467,14 @@ input {
     top: 125px;
     left: 44px;
     width: 30px;
-}footer div:first-child {
-position: absolute;
-font-family: "Dancing Script", cursive;
-color:#c8c2c2;
-top: 150px;
-right: 80px;
-font-size: 33px;
-font-style: italic;
-
 }
-footer div:last-child {
-position: absolute;
-font-family: "Dancing Script", cursive;
-color:#383837;
-top: 150px;
-left: 80px;
-font-size: 38px;
-font-style: italic;
-
+footer div:first-child {
+    position: absolute;
+    font-family: "Dancing Script", cursive;
+    color: #c8c2c2;
+    top: 150px;
+    right: 60px;
+    font-size: 33px;
+    font-style: italic;
 }
+
