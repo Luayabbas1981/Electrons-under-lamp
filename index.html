@@ -11,24 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="electrons.css">
-    <script language="JavaScript">
-        function toggle(source) {
-            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-            for (var i = 0; i < checkboxes.length; i++) {
-                if (checkboxes[i] != source)
-                    checkboxes[i].checked = source.checked;
-            }
-            const audio = new Audio();
-            audio.src = "/Audio/mixkit-birthday-crowd-party-cheer-531.wav";
-        }
-
-
-    </script>
-    <script type=text/JavaScript>
-
-    </script>
-   
+        <link rel="stylesheet" href="electrons.css">  
 </head>
 
 <body>
@@ -92,12 +75,20 @@
                 <div>Luay  Abbas</div>
                
             </footer>
-            
-           
-           
-
-
     </form>
+    <script>
+         function toggle(source) {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i] != source)
+                    checkboxes[i].checked = source.checked;
+            }
+            
+            const audio = new Audio();
+            audio.src = "/Audio/mixkit-birthday-crowd-party-cheer-531.wav";
+        }
+        
+    </script>
 </body>
 
 </html>
