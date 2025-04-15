@@ -88,19 +88,19 @@
             audio.src = "/Audio/mixkit-birthday-crowd-party-cheer-531.wav";
             document.body.style.transition="2s"
             if(checkboxes[0].checked == true && window.innerWidth < 767){
-                console.log("hi")
                 document.body.style.backgroundColor="#c7c2c2"
                 
             }else if (checkboxes[0].checked == false && window.innerWidth < 767){
-                console.log("why")
                 document.body.style.backgroundColor="#383837"  
         }
 
         if(checkboxes[0].checked == true){
+            happy.currentTime = 0
             sad.muted = true
             happy.muted=false
             happy.play()
         }else{
+            sad.currentTime = 0
             happy.muted=true
             sad.muted = false
             sad.play()
