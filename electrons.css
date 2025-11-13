@@ -1,6 +1,10 @@
 body {
     background-color: #eee;
 }
+h2 {
+    margin-top: 5rem;
+    text-align: center;
+}
 .frame {
     position: absolute;
     width: 700px;
@@ -307,7 +311,7 @@ body {
     position: absolute;
     width: 23px;
     height: 47px;
-    border-bottom: 2px solid rgb(107, 106, 106);
+    border-bottom: 2px solid #6b6a6a;
     border-radius: 50%;
     top: 374px;
     left: 224px;
@@ -319,7 +323,7 @@ body {
     position: absolute;
     width: 23px;
     height: 24px;
-    border-bottom: 2px solid rgb(107, 106, 106);
+    border-bottom: 2px solid #6b6a6a;
     border-radius: 50%;
     top: 423px;
     left: 224px;
@@ -401,7 +405,7 @@ input:checked + .lamp3 {
 }
 
 #frame1:checked + .frame {
-    background-color: #c7c2c2;
+    background-color: #d6d6d6;
 }
 
 #e1:checked + .eye1 {
@@ -456,10 +460,6 @@ input {
 
 #h3_1:checked + .hand3_1 {
     transform: rotate(140deg);
-}
-
-#red:checked + .click i {
-    color: transparent;
 }
 
 #audio {
